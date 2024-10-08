@@ -1,0 +1,41 @@
+collection of classes & interfaces
+
+              iterable 
+                |
+            [collection] 
+                |
+        [List]  [Queue]  [set]
+
+Methods on collection
+
+1) add
+2) size
+3) Remove
+4) iterate
+5) addAll
+6) removeAll
+7) clear
+
+1) interfaces List  
+                |
+ [ArrayList] [LinkedList] [vector]
+                             |
+                          [Stack]
+
+2) interfaces Queue  (FIFO)
+                |
+ [priority Queue] [LinkedList] [Deque]
+                                  |
+                             [ArrayDeque]
+
+3) interfaces Set  
+                |
+ [HashSet] [LinkedList HarhSet] [Sorted Set]
+                                     |
+                                 [tree Set]
+
+4) interfaces map  
+                |
+ [Hash map] [LinkedList Harh map] [Sorted map]
+                                     |
+                                 [tree map]
