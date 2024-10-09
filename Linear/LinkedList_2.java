@@ -34,6 +34,29 @@ class LinkedList_2{
         }
         current_node.next=new_node;
     }
+    public static void DeleteFirst(){
+        if(head==null){
+            System.out.println(" the list is empty ");
+            return;
+        }
+        head=head.next;
+    }
+    public static void DeleteLast(){
+        if(head==null){
+            System.out.println(" the List is empty ");
+            return;
+        }
+        if(head.next==null){
+            head=null;
+            return;
+        }
+        Node current_node=head;
+        while(current_node.next.next!=null){
+            current_node=current_node.next;
+        }
+        current_node.next=null;
+        
+    }
     public static void PrintList(){
         Node current_node=head;
         if(head==null){
@@ -53,5 +76,10 @@ class LinkedList_2{
         LL.PrintList();
         LL.AddLast(" third ");
         LL.PrintList();
+
+        LL.DeleteFirst();
+        LL.PrintList();
+        LL.DeleteLast();
+        LL.PrintList();
     }
-}
+} 
