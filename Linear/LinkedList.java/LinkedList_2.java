@@ -1,3 +1,4 @@
+package LinkedList;
 import java.util.*;
 class LinkedList_2{
     static Node head;
