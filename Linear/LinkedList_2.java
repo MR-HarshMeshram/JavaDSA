@@ -1,11 +1,9 @@
-package LinkedList;
 import java.util.*;
 class LinkedList_2{
-    static Node head;
+    Node head;
     static class Node{
         String data;
         Node next;
-
         Node(String data){
             this.data=data;
             this.next=null;
@@ -35,7 +33,19 @@ class LinkedList_2{
         }
         current_node.next=new_node;
     }
-    public static void DeleteFirst(){
+    public static void PrintList(){
+        Node current_node=head;
+        if(head==null){
+            System.out.println(" linkedlist is empty ");
+            return;
+        }
+        while(current_node!=null){
+            System.out.print(current_node.data+" -> ");
+            current_node=current_node.next;
+        }
+        System.out.println(" null ");
+    }
+     public static void DeleteFirst(){
         if(head==null){
             System.out.println(" the list is empty ");
             return;
@@ -58,18 +68,6 @@ class LinkedList_2{
         current_node.next=null;
         
     }
-    public static void PrintList(){
-        Node current_node=head;
-        if(head==null){
-            System.out.println(" linkedlist is empty ");
-            return;
-        }
-        while(current_node!=null){
-            System.out.print(current_node.data+" -> ");
-            current_node=current_node.next;
-        }
-        System.out.println(" null ");
-    }
     public static void main(String[] args){
         LinkedList_2 LL=new LinkedList_2();
         LL.AddFist("FIRST");
@@ -83,4 +81,4 @@ class LinkedList_2{
         LL.DeleteLast();
         LL.PrintList();
     }
-} 
+}
